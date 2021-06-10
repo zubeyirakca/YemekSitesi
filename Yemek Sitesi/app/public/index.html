@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css" />
+  
+  <script src="javascripts/script.js"></script>
+
+  <title>Benim Yemegim</title>
+</head>
+<body class="bg" style= "width:100%;height:1000px;">
+  <div class="container" >
+    <div class="kayit_ekrani">
+        
+      <form>
+              
+            <label>
+             <p class="form-text"> İsminizi Giriniz:</p>
+            </label>
+            <label>
+              <input type="text" id="girisad" class="form-control" placeholder="İsminiz" >
+            </label>  
+            <label>
+             <p class="form-text">Soyadınızı Giriniz:</p>
+            </label>
+            <label>
+              <input type="text" id="girissoyad" class="form-control" placeholder="Soyadınız">
+            </label>
+            <label>
+              <p class="form-text">Kullanıcı Adı Giriniz:</p>
+             </label>
+             <label>
+               <input type="text" id="giriskullanıcı" class="form-control" placeholder="Kullanıcı Adınız">
+             </label>
+              <label>
+              <p class="form-text">Şifrenizi Giriniz:</p>
+              </label>
+              <label>
+                    
+                            
+                            <div class="field">
+                                <div class="ui icon input">
+                                    <input type="password" id="girisal" name="password" placeholder="Password" class="form-control"/> <br>
+                                    <i class="circular eye link icon" onclick="togglePassword()"></i><br>
+                                </div>
+                            </div><br>
+                            <div class="form-button" onclick="deneme()">Giriş Yap</div><br>
+                            <div class="form-button" onclick="func()">Kayıt Ol</div>
+
+                       
+              </label><br><br>
+            
+      
+                  
+             
+              </form>
+              <script>
+                    function togglePassword() {
+                        var element = document.getElementById('password');
+                        element.type = (element.type == 'password' ? 'text' : 'password');
+                    }
+                </script>
+            </div>
+</div>
+</body>
+</html>

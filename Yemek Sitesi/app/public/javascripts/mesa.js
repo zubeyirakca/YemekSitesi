@@ -1,0 +1,1 @@
+const a=document.getElementById('mesa').value="sdbm";
